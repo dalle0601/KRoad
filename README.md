@@ -5,7 +5,7 @@
 GoTravle (Working title) 를 만들어 보기로했다 !  
   
 웹트래픽분석업체 스탯카운터에 따르면 모바일 기기를 통한 전 세계 인터넷 접속 비중은 2011년 4%, 2012년 20%에 불과했지만, 2016년 10월 51.3%로 PC를 앞지르기 시작했다.  
-(출처 https://biz.chosun.com/it-science/ict/2023/06/07/72W3JB4UAVHEHOB6PHFKM5SBKA/)  
+([출처](https://biz.chosun.com/it-science/ict/2023/06/07/72W3JB4UAVHEHOB6PHFKM5SBKA/)) 
 
 모바일 친화적인 웹페이지를 구현하고자한다.  
 
