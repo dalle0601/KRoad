@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Yeon_Sung } from 'next/font/google';
+import Navbar from '@/components/navbar/Navbar';
 
 const logoFont = Yeon_Sung({
   variable: '--logo-font',
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${logoFont.variable}`}>{children}</body>
+      <body className={`${logoFont.variable}`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
