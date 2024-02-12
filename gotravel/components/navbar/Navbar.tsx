@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="flex items-center gap-20">
         <div className="font-logoFont text-2xl">사방팔방</div>
 
-        <ul className="flex gap-10">
+        <ul className="flex gap-10 font-[500]	">
           <li>
             <Link href="/">홈</Link>
           </li>

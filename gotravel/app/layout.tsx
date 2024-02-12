@@ -1,13 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Yeon_Sung } from 'next/font/google';
+import { FontClassNames } from '@/assets/font/font';
 import Navbar from '@/components/navbar/Navbar';
-
-const logoFont = Yeon_Sung({
-  variable: '--logo-font',
-  subsets: ['latin'],
-  weight: '400',
-});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${logoFont.variable}`}>
+      <body className={FontClassNames}>
         <Navbar />
         {children}
       </body>
