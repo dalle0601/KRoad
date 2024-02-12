@@ -3,12 +3,12 @@ import Navbar from './navbar/Navbar';
 
 function CommonHeader() {
   return (
-    <div className="w-[1440px] flex justify-between items-center h-[80px]">
-      <div className="flex items-center gap-20">
+    <div className="flex justify-between items-center h-[80px] px-8">
+      <div className="flex items-center flex-grow gap-16">
         <Logo />
         <Navbar />
-        <div className="text-gray-800">로그인</div>
       </div>
+      <div className="text-gray-800">로그인</div>
     </div>
   );
 }

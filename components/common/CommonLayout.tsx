@@ -6,7 +6,7 @@ function CommonLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="w-full h-full">
       <CommonHeader />
-      <div>{children}</div>
+      <div className="h-[calc(100vh-160px)">{children}</div>
       <CommonFooter />
     </div>
   );
