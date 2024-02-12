@@ -12,12 +12,18 @@ module.exports = {
         defaultFont: ['var(---default-font)'],
       },
       colors: {
-        primary: '#4A99D3',
+        primary: {
+          100: '#93CAE6',
+          500: '#4A99D3',
+        },
         green: {
           400: '#C1BA00',
           700: '#119317',
         },
         black: '#292929',
+        gray: {
+          100: '#E6E6E6',
+        },
       },
     },
   },

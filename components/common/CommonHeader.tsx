@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Logo } from './Logo';
 import Navbar from './navbar/Navbar';
 
@@ -8,8 +9,8 @@ function CommonHeader() {
         <Logo />
         <Navbar />
       </div>
-      <div className="font-[500] cursor-pointer text-white bg-primary rounded-full px-4 py-2">
-        로그인
+      <div className="font-[500] cursor-pointer text-white bg-primary-500 rounded-full px-4 py-2">
+        <Link href={'/login'}>로그인</Link>
       </div>
     </div>
   );
