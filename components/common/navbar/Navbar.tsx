@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <ul className="flex gap-10 font-[500]">
+    <ul className="flex gap-10 font-[700]">
       <li>
         <Link href="/">홈</Link>
       </li>
