@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { FontClassNames } from '@/assets/font/font';
-import Navbar from '@/components/navbar/Navbar';
+import Navbar from '@/components/common/navbar/Navbar';
+import CommonLayout from '@/components/common/CommonLayout';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,8 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={FontClassNames}>
-        <Navbar />
-        {children}
+        <CommonLayout>{children}</CommonLayout>
       </body>
     </html>
   );

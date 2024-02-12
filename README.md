@@ -18,7 +18,7 @@ GoTravle (Working title) 를 만들어 보기로했다 !
 * [여행지 즐겨찾기](Favorites)
 * [여행지 추천](recommendations)
 * [여행지 유튜브 영상](youTube)
-* [환율 정보](ExchangeRate)
+* [환율 정보](ExchangeRate)1
 
 > 일정
 
