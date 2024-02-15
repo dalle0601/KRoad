@@ -10,3 +10,17 @@
 
 @layer utilities {
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply w-10 h-10 bg-black text-black;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-7xl opacity-70;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary-500;
+}

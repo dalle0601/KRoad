@@ -1,13 +1,9 @@
-import HomeSwiper from '@/components/homeSwiper/HomeSwiper';
+import MainPage from '@/components/mainPage/MainPage';
 
-export default function Home() {
+export default async function Home() {
   return (
-    <div className="w-full flex items-center justify-center">
-      <div className="w-1/2">
-        <h1>title</h1>
-        <p>가나다라마바사아가낭라말만란말나란ㅁㅇ라자갖란알ㄴ알</p>
-      </div>
-      <HomeSwiper />
+    <div className="w-full flex flex-col items-center justify-center px-32 py-10">
+      <MainPage />
     </div>
   );
 }

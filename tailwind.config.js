@@ -25,6 +25,8 @@ module.exports = {
           900: '#1d445d',
           950: '#132d3e',
         },
+        yellow: '#FFBD39',
+        headTitle: '#112B3C',
       },
     },
   },
