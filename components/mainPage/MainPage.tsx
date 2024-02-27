@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomeSwiper from '@/components/homeSwiper/HomeSwiper';
 import MyHotPlace from '@/components/myHotPlace/MyHotPlace';
 import TourPackage from '@/components/tourPackage/TourPackage';
@@ -81,12 +81,6 @@ const MainPage = async () => {
     await getData(areaArray[i].code);
   }
 
-  // navigator.geolocation.getCurrentPosition(function (pos) {
-  //   console.log(pos);
-  //   var latitude = pos.coords.latitude;
-  //   var longitude = pos.coords.longitude;
-  //   alert('현재 위치는 : ' + latitude + ', ' + longitude);
-  // });
   return (
     <>
       <HomeSwiper />

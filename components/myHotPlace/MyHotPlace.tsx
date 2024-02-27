@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import img1 from '@/assets/경복궁.png';
 import img2 from '@/assets/경주.png';
 import img3 from '@/assets/제천.png';
@@ -53,6 +54,27 @@ const MyHotPlace = ({ tripdata }: ITripData) => {
       spendTime: 0.6,
     },
   ];
+
+  const [latitude, setLatitude] = useState(0);
+  const [longitude, setLongitude] = useState(0);
+
+  const getGeolocation = () => {
+    console.log('hello');
+
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      console.log(pos.coords.latitude, pos.coords.longitude);
+      setLatitude(pos.coords.latitude);
+      setLongitude(pos.coords.longitude);
+    });
+  };
+
+  useEffect(() => {
+    getGeolocation();
+
+    // https://apis.data.go.kr/B551011/KorService1/locationBasedList1?numOfRows=5&MobileOS=ETC&MobileApp=test&_type=json&arrange=Q&mapX=126.757541&mapY=37.6655191&radius=20000&serviceKey=mhjUbuEkb7p91IrfK9qadCMCyzCB8n%2BUqDTuFrjS%2FCu%2FjLC1SUxGJiFT9P6PJEwn8w7mhP4gHC0EUWlxXs95jA%3D%3D
+    // 호출 ULR
+  }, []);
+
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col items-center justify-center text-2xl text-headTitle font-semibold pt-20">
